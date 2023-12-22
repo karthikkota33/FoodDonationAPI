@@ -1,0 +1,8 @@
+version: '3.4'
+
+services:
+  fooddonationapi:
+    image: ${DOCKER_REGISTRY-}fooddonationapi
+    build:
+      context: .
+      dockerfile: Dockerfile
