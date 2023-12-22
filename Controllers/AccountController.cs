@@ -163,6 +163,7 @@ namespace FoodDonationAPI.Controllers
         }
 
         //Send Email for new client
+        //Email not working, need to check
         private async Task<bool> SendEmail(string sub, string msgBody, List<EmailAddress> audience, List<EmailAddress> audienceBCC)
         {
             var apiKey = _configurationRoot["SendGridKey"];
